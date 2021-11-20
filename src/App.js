@@ -21,7 +21,8 @@ class App extends Component {
             <p className="App-intro">
               <ul>
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>                
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/Page404">Error 404</Link></li>                
               </ul>
             </p>
 
@@ -29,7 +30,7 @@ class App extends Component {
               <Route path="/" exact component={Home}/>
               <Route path="/about" component={About}/>
               <Route component={Page404} />
-              
+
             </Switch>
           </div>
         </BrowserRouter>
